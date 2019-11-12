@@ -4,6 +4,7 @@
 #B76D68 Dark pink
 #EFEBE9 Lightgrey
 #2F3744 Darkblue
+  font-family: 'Roboto', sans-serif;
 */
 
 * {
@@ -16,44 +17,87 @@ body {
   color: #2B2E34;
 }
 
-h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;
+h1 {
+  font-size: 40px;
+  text-transform: lowercase;
+  margin: 5px 0 5px 0;
 }
 
-h1 {
-  text-transform: lowercase;
-}
 h2 {
   padding: 5px;
   display: inline-block;
   text-transform: uppercase;
   background: #B76D68;
-  color: #fff;
-  font-size: 32px;
-  font-weight: bold;
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 h3 {
+  font-size: 20px;
+  font-weight: 700;
   text-transform: uppercase;
   color: #B76D68;
 }
 
 header {
-  padding: 15px;
+  padding: 0 30px;
   background: #4C5B5C;
-  color: #fff;
+  color: #FFF;
+  height: 450px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  /* position: relative; */
+}
+
+.header-links {
+  margin-left: auto;
+  padding: 20px 30px;
+}
+
+.btn {
+  border: 3px solid #FFF;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: none;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-info {
+  width: 100%;
 }
 
 header h3 {
   color: #fff;
+  text-transform: lowercase;
 }
 
-figure img {
-  width: 25%;
-  border: 2px solid #fff;
+header h4 {
+  text-transform: uppercase;
+  letter-spacing: 1.15px;
+  font-size: 13px;
+  font-weight: 300;
+  margin: 5px 0;
+}
+
+.highlight {
+  font-weight: 700;
+}
+
+figure {
+  width: 160px; 
+  position: absolute;
+  margin: 0;
+  top: 330px;
+  right: 0;
+}
+
+.profile-img {
+  width: 100%;
+  border: 3px solid #FFF;
   border-radius: 50%;
 }
 
@@ -64,7 +108,7 @@ main {
 }
 
 section {
-  padding: 20px 150px 20px 150px;
+  padding: 50px 30px;
 }
 
 .summary {
@@ -85,12 +129,12 @@ section {
 
 footer {
 background: #2F3744;
-color: #fff;
+color: #FFF;
 text-align: center;
 padding: 15px;
 height: 100px;
 }
 
 footer h3 {
-  color: #fff;
+  color: #FFF;
 }

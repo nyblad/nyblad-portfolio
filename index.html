@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <title>Nyblad portfolio</title>
 </head>
@@ -14,17 +14,26 @@
 <body>
 
   <header>
-    <div>
-      <h4>Portfolio: <span>Sofie Nyblad</span></h4>
+    <div class="header-links">
+      <button class="btn" style="background-image: url('assets/linkedin.svg')"
+        onclick="window.location.href = 'https://www.linkedin.com/in/sofienyblad/';"></button>
+      <button class="btn" style="background-image: url('assets/github.svg')"
+        onclick="window.location.href = 'https://github.com/nyblad';"></button>
+      <button class="btn" style="background-image: url('assets/stackoverflow.svg')"
+        onclick="window.location.href = 'https://stackoverflow.com/users/12034125/sofie-nyblad';"></button>
+    </div>
+    <div class="header-info">
+      <h4>Portfolio: <span class="highlight">Sofie Nyblad</span></h4>
       <h1>Frontend developer</h1>
       <h3>+ something else</h3>
     </div>
-    <figure>
-      <img src="assets/sofie-nyblad.jpg" alt="profile picture">
-    </figure>
+
   </header>
 
   <main>
+    <figure>
+      <img class="profile-img" src="assets/sofie-nyblad.jpg" alt="profile picture">
+    </figure>
 
     <section class="summary">
       <div>This is the section where you summarise what you have been doing in the past and what you are wanting to do
@@ -39,10 +48,23 @@
 
     <section class="featured-projects">
       <h2>FEATURED PROJECTS</h2>
-      <article>Project 1</article>
-      <article>Project 2</article>
-      <article>Project 3</article>
-      <article>Project 4</article>
+
+      <article>
+        <h4>Project 1</h4>
+      </article>
+
+      <article>
+        <h4>Project 2</h4>
+      </article>
+
+      <article>
+        <h4>Project 3</h4>
+      </article>
+
+      <article>
+        <h4>Project 4</h4>
+      </article>
+
     </section>
 
     <section class="other-projects">
@@ -54,8 +76,13 @@
 
     <section class="my-thoughts">
       <h2>MY THOUGHTS ABOUT CODE</h2>
-      <article>Thought 1</article>
-      <article>Thought 2</article>
+      <article>
+        <h4>Thought 1</h4>
+      </article>
+
+      <article>
+        <h4>Thought 2</h4>
+      </article>
     </section>
 
     <section class="skills">

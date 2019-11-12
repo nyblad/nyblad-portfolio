@@ -1,0 +1,96 @@
+/* COLOR SCHEME
+#2B2E34 Almost black
+#4C5B5C Dark silvergreen
+#B76D68 Dark pink
+#EFEBE9 Lightgrey
+#2F3744 Darkblue
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #2B2E34;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-transform: lowercase;
+}
+h2 {
+  padding: 5px;
+  display: inline-block;
+  text-transform: uppercase;
+  background: #B76D68;
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3 {
+  text-transform: uppercase;
+  color: #B76D68;
+}
+
+header {
+  padding: 15px;
+  background: #4C5B5C;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header h3 {
+  color: #fff;
+}
+
+figure img {
+  width: 25%;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+section {
+  padding: 20px 150px 20px 150px;
+}
+
+.summary {
+  background: #EFEBE9;
+}
+
+.featured-projects {
+  background: #EFEBE9;
+}
+
+.other-projects {
+  background: #EFEBE9;
+}
+
+.skills {
+  background: #EFEBE9;
+}
+
+footer {
+background: #2F3744;
+color: #fff;
+text-align: center;
+padding: 15px;
+height: 100px;
+}
+
+footer h3 {
+  color: #fff;
+}

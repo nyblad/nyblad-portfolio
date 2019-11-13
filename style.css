@@ -64,6 +64,7 @@ header {
   background: none;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 .header-info {

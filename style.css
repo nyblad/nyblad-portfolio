@@ -67,6 +67,9 @@ a {
 /* STYLING FOR HEADER */
 header {
   background: #4C5B5C;
+  background-image: url('assets/wallpaper_1900.jpg');
+  background-size: cover;
+  background-position: top;
   color: #FFF;
   height: 500px;
 }

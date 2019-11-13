@@ -40,20 +40,20 @@ h3 {
   color: #B76D68;
 }
 
+/* STYLING FOR HEADER */
 header {
-  padding: 0 30px;
+  padding: 70px 30px;
   background: #4C5B5C;
   color: #FFF;
-  height: 450px;
+  height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* position: relative; */
+  justify-content: flex-start;
 }
 
 .header-links {
   margin-left: auto;
-  padding: 20px 30px;
+  padding: 30px 10px;
 }
 
 .btn {
@@ -67,7 +67,7 @@ header {
 }
 
 .header-info {
-  width: 100%;
+  width: 75%;
 }
 
 header h3 {
@@ -86,13 +86,13 @@ header h4 {
 .highlight {
   font-weight: 700;
 }
-
+/* STYLING FOR PROFILE IMAGE */
 figure {
   width: 160px; 
   position: absolute;
   margin: 0;
-  top: 330px;
-  right: 0;
+  top: 360px;
+  right: 10%;
 }
 
 .profile-img {
@@ -101,6 +101,7 @@ figure {
   border-radius: 50%;
 }
 
+/* STYLING FOR MAIN SECTIONS */
 main {
   display: flex;
   flex-direction: column;
@@ -111,10 +112,32 @@ section {
   padding: 50px 30px;
 }
 
+/* STYLING FOR SUMMARY */
 .summary {
+  display: inline-block;
   background: #EFEBE9;
+  text-align: left;
 }
 
+.line-dot {
+  /* content: ''; */
+  height: 3px;
+  width: 60px;
+  background: #B76D68;
+  position: absolute;
+}
+.line-dot::after {
+  content: '';
+  height: 10px;
+  width: 10px;
+  position: relative;
+  float: right;
+  top: -3px;
+  border-radius: 50%;
+  background: #B76D68;
+}
+
+/* STYLING FOR PROJECTS */
 .featured-projects {
   background: #EFEBE9;
 }
@@ -123,10 +146,12 @@ section {
   background: #EFEBE9;
 }
 
+/* STYLING FOR SKILLS */
 .skills {
   background: #EFEBE9;
 }
 
+/* STYLING FOR FOOTER */
 footer {
 background: #2F3744;
 color: #FFF;
@@ -138,3 +163,9 @@ height: 100px;
 footer h3 {
   color: #FFF;
 }
+
+/* STYLING FOR MEDIA QUERY 1 BIG PHONE*/
+
+/* STYLING FOR MEDIA QUERY 2 TABLET*/
+
+/* STYLING FOR MEDIA QUERY 3 DESKTOP*/

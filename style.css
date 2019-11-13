@@ -256,6 +256,11 @@ footer h4, footer p {
   margin: 8px 0;
 }
 
+.credit {
+  padding: 15px 0;
+  font-size: 8px;
+}
+
 /* STYLING FOR MEDIA QUERY 1 BIG PHONE*/
 
 /* STYLING FOR MEDIA QUERY 2 TABLET*/

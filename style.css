@@ -33,6 +33,7 @@ h2 {
   color: #FFF;
   font-size: 22px;
   font-weight: 700;
+  margin: 0 0 40px 0;
 }
 
 h3 {
@@ -60,6 +61,7 @@ p {
 a {
   cursor: pointer;
   text-decoration: none;
+  color: #965A56;
 }
 
 /* STYLING FOR HEADER */
@@ -205,6 +207,15 @@ section {
 
  /* STYLING FOR MORE BUTTONS */
 
+.more-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-more-link {
+  width: 30%;
+}
+
  .btn-more {
   border: 3px solid #965A56;
   border-radius: 50%;
@@ -214,6 +225,13 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+
+.btn-more-link p {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #965A56;
+  font-weight: bold;
 }
 
 

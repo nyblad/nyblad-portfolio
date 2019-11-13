@@ -15,11 +15,11 @@
 
   <header>
     <div class="header-links">
-      <button class="btn" style="background-image: url('assets/linkedin.svg')"
+      <button class="btn" style="background-image: url('assets/linkedin-16.png')"
         onclick="window.location.href = 'https://www.linkedin.com/in/sofienyblad/';"></button>
-      <button class="btn" style="background-image: url('assets/github.svg')"
+      <button class="btn" style="background-image: url('assets/github-16.png')"
         onclick="window.location.href = 'https://github.com/nyblad';"></button>
-      <button class="btn" style="background-image: url('assets/stackoverflow.svg')"
+      <button class="btn" style="background-image: url('assets/stackoverflow-16.png')"
         onclick="window.location.href = 'https://stackoverflow.com/users/12034125/sofie-nyblad';"></button>
     </div>
     <div class="header-info">
@@ -98,7 +98,7 @@
             <h4>Code</h4>
             <li>HTML5</li>
             <li>CSS3</li>
-            <li>JavaScript</li>
+            <li>JavaScript ES6</li>
             <li>GitHub</li>
           </ul>
           <ul>
@@ -129,12 +129,21 @@
     <section class="more">
       <h2>MORE</h2>
       <div class="more-links">
-        <button class="btn-more" style="background-image: url('assets/linkedin.svg')"
-          onclick="window.location.href = 'https://www.linkedin.com/in/sofienyblad/';"></button>
-        <button class="btn-more" style="background-image: url('assets/github.svg')"
-          onclick="window.location.href = 'https://github.com/nyblad';"></button>
-        <button class="btn-more" style="background-image: url('assets/stackoverflow.svg')"
-          onclick="window.location.href = 'https://stackoverflow.com/users/12034125/sofie-nyblad';"></button>
+        <!-- Icons from https://www.iconsdb.com/ -->
+        <a class="btn-more-link" href="https://www.linkedin.com/in/sofienyblad/" target="_blank">
+          <button class="btn-more" style="background-image: url('assets/linkedin-32.png');"></button>
+          <p>LinkedIn</p>
+        </a>
+
+        <a class="btn-more-link" href="https://github.com/nyblad" target="_blank">
+          <button class="btn-more" style="background-image: url('assets/github-32.png')"></button>
+          <p>GitHub</p>
+        </a>
+
+        <a class="btn-more-link" href="https://stackoverflow.com/users/12034125/sofie-nyblad" target="_blank">
+          <button class="btn-more" style="background-image: url('assets/stackoverflow-32.png')"></button>
+          <p>StackOverflow</p>
+        </a>
       </div>
     </section>
 
@@ -147,6 +156,7 @@
     <p>nyblad@hotmail.com</p>
   </footer>
 
+  <!-- JavaScript to swap words -->
   <script src="script.js"></script>
 
 </body>

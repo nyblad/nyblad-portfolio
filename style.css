@@ -179,6 +179,7 @@ main {
   display: flex;
   flex-direction: column;
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .project-card-title {
@@ -225,6 +226,10 @@ main {
   color: #111111;
   margin-right: 5px;
   font-size: 9px;
+}
+
+.other-projects {
+  padding-top: 0; 
 }
 
 /* STYLING FOR THOUGHTS */
@@ -276,7 +281,7 @@ main {
  ul {
   list-style-type: none;
   margin: 0;
-  padding: 5px 0;
+  padding: 0 0 15px 0;
  }
 
  li {

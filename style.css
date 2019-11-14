@@ -1,7 +1,7 @@
 /* COLOR SCHEME
 #2B2E34 Almost black
 #4C5B5C Dark silvergreen
-#965A56 Dark pink
+#513851 Dark pink
 #EFEBE9 Lightgrey
 #2F3744 Darkblue
 */
@@ -29,7 +29,7 @@ h2 {
   padding: 5px;
   display: inline-block;
   text-transform: uppercase;
-  background: #965A56;
+  background: #513851;
   color: #FFF;
   font-size: 22px;
   font-weight: 700;
@@ -41,7 +41,7 @@ h3 {
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #965A56;
+  color: #513851;
 }
 
 h4 {
@@ -49,7 +49,7 @@ h4 {
   font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #965A56;
+  color: #513851;
   margin: 10px 0;
 }
 
@@ -61,7 +61,7 @@ p {
 a {
   cursor: pointer;
   text-decoration: none;
-  color: #965A56;
+  color: #513851;
 }
 
 /* STYLING FOR HEADER */
@@ -159,7 +159,7 @@ main {
 .line-dot {
   height: 3px;
   width: 50px;
-  background: #965A56;
+  background: #513851;
   position: absolute;
   flex: 1;
 }
@@ -171,7 +171,7 @@ main {
   float: right;
   top: -3px;
   border-radius: 50%;
-  background: #965A56;
+  background: #513851;
 }
 
 /* STYLING FOR PROJECTS */
@@ -195,6 +195,7 @@ main {
   background-size: cover;
   background-position: center center;
   box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
   width: 100%;
   height: 180px;
 }
@@ -206,7 +207,7 @@ main {
 }
 
 .text-h {
-  color: #965A56;
+  color: #513851;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -220,10 +221,41 @@ main {
 .tag {
   padding: 3px 6px;
   display: inline-block;
-  background: #C5A5A2;
+  background: #AFA4AF;
   color: #111111;
   margin-right: 5px;
   font-size: 9px;
+}
+
+/* STYLING FOR THOUGHTS */
+.thought-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.thought-card-img {
+  background-size: cover;
+  background-position: center center;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  width: 100%;
+  height: 180px;
+  margin-bottom: 10px;
+}
+
+.thought-headline {
+  color: #000;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.thought-card-text {
+  margin: 15px 0;
+  color: #000;
+  line-height: 1.5;
+  margin: 5px 0 15px 0;
 }
 
 /* STYLING FOR SKILLS */
@@ -266,7 +298,7 @@ main {
 }
 
  .btn-more {
-  border: 3px solid #965A56;
+  border: 3px solid #513851;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -279,7 +311,7 @@ main {
 .more-links a {
   font-size: 11px;
   text-transform: uppercase;
-  color: #965A56;
+  color: #513851;
   font-weight: bold;
   margin-top: 10px;
 }
@@ -306,6 +338,7 @@ footer h4, footer p {
 .credit {
   padding: 15px 0;
   font-size: 9px;
+  color: #FFF;
 }
 
 /* STYLING FOR MEDIA QUERY 1 BIG PHONE*/

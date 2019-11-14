@@ -13,7 +13,7 @@
 
 body {
   margin: 0;
-  color: #2B2E34;
+  color: #000;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -67,7 +67,7 @@ a {
 /* STYLING FOR HEADER */
 header {
   background: #4C5B5C;
-  background-image: url('assets/wallpaper_1900.jpg');
+  background-image: url('assets/wallpaper_750.jpg');
   background-size: cover;
   background-position: top;
   color: #FFF;
@@ -75,7 +75,7 @@ header {
 }
 
 .header-links {
-  position: absolute;
+  position: absolute; /*relative to html since parent has a static position*/
   top: 70px;
   right: 10%;
   padding: 30px 10px;
@@ -94,7 +94,7 @@ header {
 
 .header-info {
   width: 75%;
-  position: absolute;
+  position: absolute; 
   top: 170px;
   left: 30px;
 }
@@ -120,7 +120,7 @@ header h4 {
 /* STYLING FOR PROFILE IMAGE */
 figure {
   width: 160px; 
-  position: absolute;
+  position: absolute; 
   margin: 0;
   top: 360px;
   right: 10%;
@@ -178,13 +178,37 @@ main {
 .project-card {
   display: flex;
   flex-direction: column;
+  text-align: left;
+}
+
+.project-card-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  color: #FFF;
+  position: relative; /*relative to its old position*/
+  align-self: center;
+  top: 100px;
 }
 
 .project-card-img {
   background-size: cover;
+  background-position: center center;
   box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 180px;
+}
+
+.project-card-text {
+  margin: 15px 0;
+  color: #000;
+  line-height: 1.5;
+}
+
+.text-h {
+  color: #965A56;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .project-card-tags {
@@ -194,11 +218,12 @@ main {
 }
 
 .tag {
-  padding: 6px;
+  padding: 3px 6px;
   display: inline-block;
   background: #C5A5A2;
   color: #111111;
   margin-right: 5px;
+  font-size: 9px;
 }
 
 /* STYLING FOR SKILLS */
@@ -219,7 +244,7 @@ main {
  ul {
   list-style-type: none;
   margin: 0;
-  padding: 10px 0;
+  padding: 5px 0;
  }
 
  li {
@@ -228,13 +253,16 @@ main {
 
  /* STYLING FOR MORE BUTTONS */
 
-.more-links {
+.more-links-wrapper {
   display: flex;
   justify-content: space-evenly;
 }
 
-.btn-more-link {
+.more-links {
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
  .btn-more {
@@ -248,11 +276,12 @@ main {
   cursor: pointer;
 }
 
-.btn-more-link p {
+.more-links a {
   font-size: 11px;
   text-transform: uppercase;
   color: #965A56;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 
@@ -276,7 +305,7 @@ footer h4, footer p {
 
 .credit {
   padding: 15px 0;
-  font-size: 8px;
+  font-size: 9px;
 }
 
 /* STYLING FOR MEDIA QUERY 1 BIG PHONE*/

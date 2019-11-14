@@ -34,7 +34,7 @@
 
   <main>
 
-    <section class="wrapper-grey">
+    <div class="wrapper-grey">
       <section class="summary">
         <div class="line-dot"></div>
         <p>I'm a frontend developer with background in technical support, project management and web editing.</p>
@@ -42,41 +42,47 @@
             remote bootcamp</a> with the main goal to work with web development full time after
           graduate.</p>
       </section>
-    </section>
+    </div>
 
-    <section class="wrapper-white">
+    <div class="wrapper-white">
       <section class="tech">
         <h2>TECH</h2>
         <p>HTML5, CSS3, Flexbox, JavaScript ES6, React, Node.js, API:s, Web Accessibility, mob-programming,
           pair-programming, GitHub.</p>
       </section>
-    </section>
+    </div>
 
-    <section class="wrapper-grey">
+    <div class="wrapper-grey">
       <section class="featured-projects">
         <h2>FEATURED PROJECTS</h2>
 
-        <article class="project-card">
-          <div class="project-card-img" style="background-image: url('assets/project-weather.png')"></div>
-          <div class="project-card-text">WEATHER APP Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <a class="project-card" href="#">
+          <div class="project-card-title">Weather app</div>
+          <div class="project-card-img" style="background-image: url('assets/project-weather-day.jpg')"></div>
+          <div class="project-card-text"><span class="text-h">Weather app with API</span> Lorem ipsum dolor sit amet
+            consectetur
+            adipisicing elit<span class="text-h"> >></span></div>
+          <div class="project-card-tags">
+            <div class="tag">HTML5</div>
+            <div class="tag">CSS3</div>
+            <div class="tag">JavaScript ES6</div>
+            <div class="tag">API</div>
+          </div>
+        </a>
+
+        <a class="project-card" href="#">
+          <div class="project-card-title">Pizza bot</div>
+          <div class="project-card-img" style="background-image: url('assets/project-pizzabot.jpg')"></div>
+          <div class="project-card-text"><span class="text-h">pizza bot with Javascript</span> Lorem ipsum dolor sit
+            amet
+            consectetur
+            adipisicing elit<span class="text-h"> >></span></div>
           <div class="project-card-tags">
             <div class="tag">HTML5</div>
             <div class="tag">CSS3</div>
             <div class="tag">JavaScript ES6</div>
           </div>
-        </article>
-
-        <article>
-          <h4>Project 2</h4>
-        </article>
-
-        <article>
-          <h4>Project 3</h4>
-        </article>
-
-        <article>
-          <h4>Project 4</h4>
-        </article>
+        </a>
 
       </section>
 
@@ -86,9 +92,9 @@
         <div>Project title 2</div>
         <div>Project title 3</div>
       </section>
-    </section>
+    </div>
 
-    <section class="wrapper-white">
+    <div class="wrapper-white">
       <section class="my-thoughts">
         <h2>MY THOUGHTS ABOUT CODE</h2>
         <article>
@@ -99,65 +105,69 @@
           <h4>Thought 2</h4>
         </article>
       </section>
-    </section>
+    </div>
 
-    <section class="wrapper-grey">
+    <div class="wrapper-grey">
       <section class="skills">
         <h2>SKILLS</h2>
         <div class="skill-box-outer">
           <div class="skill-box-inner">
+            <h4>Code</h4>
             <ul>
-              <h4>Code</h4>
               <li>HTML5</li>
               <li>CSS3</li>
               <li>JavaScript ES6</li>
               <li>GitHub</li>
             </ul>
+            <h4>Upcoming</h4>
             <ul>
-              <h4>Upcoming</h4>
               <li>React</li>
               <li>Node.js</li>
               <li>Vue.js</li>
             </ul>
           </div>
           <div class="skill-box-inner">
+            <h4>Toolbox</h4>
             <ul>
-              <h4>Toolbox</h4>
               <li>VS Code</li>
               <li>Slack</li>
               <li>Trello</li>
             </ul>
+            <h4>More</h4>
             <ul>
-              <h4>More</h4>
               <li>Team management</li>
               <li>Episerver CMS</li>
               <li>Agile methodology</li>
               <li>Remote work</li>
             </ul>
           </div>
-      </section>
-    </section>
-
-    <section class="wrapper-white">
-      <section class="more">
-        <h2>FOR MORE</h2>
-        <div class="more-links">
-          <!-- Icons from https://www.iconsdb.com/ -->
-          <a class="btn-more-link" href="https://www.linkedin.com/in/sofienyblad/" target="_blank">
-            <button class="btn-more" style="background-image: url('assets/linkedin-32.png');"></button>
-            <p>LinkedIn</p>
-          </a>
-          <a class="btn-more-link" href="https://github.com/nyblad" target="_blank">
-            <button class="btn-more" style="background-image: url('assets/github-32.png')"></button>
-            <p>GitHub</p>
-          </a>
-          <a class="btn-more-link" href="https://stackoverflow.com/users/12034125/sofie-nyblad" target="_blank">
-            <button class="btn-more" style="background-image: url('assets/stackoverflow-32.png')"></button>
-            <p>StackOverflow</p>
-          </a>
         </div>
       </section>
-    </section>
+    </div>
+
+    <div class="wrapper-white">
+      <section class="more">
+        <h2>FOR MORE</h2>
+        <div class="more-links-wrapper">
+          <!-- Icons from https://www.iconsdb.com/ -->
+          <div class="more-links">
+            <button class="btn-more" style="background-image: url('assets/linkedin-32.png')"
+              onclick="window.location.href = 'https://www.linkedin.com/in/sofienyblad/';"></button>
+            <a href="https://www.linkedin.com/in/sofienyblad/">LinkedIn</a>
+          </div>
+          <div class="more-links">
+            <button class="btn-more" style="background-image: url(' assets/github-32.png')"
+              onclick="window.location.href = 'https://github.com/nyblad';"></button>
+            <a href="https://github.com/nyblad">GitHub</a>
+          </div>
+          <div class="more-links">
+            <button class="btn-more" style="background-image: url('assets/stackoverflow-32.png')"
+              onclick="window.location.href = 'https://stackoverflow.com/users/12034125/sofie-nyblad';"></button>
+            <a href="https://stackoverflow.com/users/12034125/sofie-nyblad">StackOverflow</a>
+          </div>
+        </div>
+      </section>
+    </div>
 
   </main>
 

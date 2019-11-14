@@ -1,7 +1,7 @@
 /* COLOR SCHEME
 #2B2E34 Almost black
 #4C5B5C Dark silvergreen
-#513851 Dark pink
+#5C1333 Dark pink
 #EFEBE9 Lightgrey
 #2F3744 Darkblue
 */
@@ -29,7 +29,7 @@ h2 {
   padding: 5px;
   display: inline-block;
   text-transform: uppercase;
-  background: #513851;
+  background: #5C1333;
   color: #FFF;
   font-size: 22px;
   font-weight: 700;
@@ -41,7 +41,7 @@ h3 {
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #513851;
+  color: #5C1333;
 }
 
 h4 {
@@ -49,7 +49,7 @@ h4 {
   font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #513851;
+  color: #5C1333;
   margin: 10px 0;
 }
 
@@ -61,7 +61,7 @@ p {
 a {
   cursor: pointer;
   text-decoration: none;
-  color: #513851;
+  color: #5C1333;
 }
 
 /* STYLING FOR HEADER */
@@ -162,19 +162,23 @@ main {
   margin: 0 auto;
 }
 
+.more {
+  max-width: 700px;
+}
+
 /* STYLING FOR SUMMARY */
 .summary {
-  display: flex;
-  flex-direction: column;
   text-align: left;
 }
 
 .line-dot {
   height: 3px;
   width: 50px;
-  background: #513851;
-  position: absolute;
-  flex: 1;
+  background: #5C1333;
+  position: relative;
+  float:left;
+  top: 12px;
+  margin-right: 10px;  
 }
 .line-dot::after {
   content: '';
@@ -184,14 +188,21 @@ main {
   float: right;
   top: -3px;
   border-radius: 50%;
-  background: #513851;
+  background: #5C1333;
 }
 
 /* STYLING FOR PROJECTS */
+.projects-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
   text-align: left;
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -202,7 +213,7 @@ main {
   color: #FFF;
   position: relative; /*relative to its old position*/
   align-self: center;
-  top: 100px;
+  top: 40%;
 }
 
 .project-card-img {
@@ -221,7 +232,7 @@ main {
 }
 
 .text-h {
-  color: #513851;
+  color: #5C1333;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -235,7 +246,7 @@ main {
 .tag {
   padding: 3px 6px;
   display: inline-block;
-  background: #AFA4AF;
+  background: #E7D5DD;
   color: #111111;
   margin-right: 5px;
   font-size: 9px;
@@ -243,6 +254,14 @@ main {
 
 .other-projects {
   padding-top: 0; 
+}
+
+.other-project-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 /* STYLING FOR THOUGHTS */
@@ -254,7 +273,7 @@ main {
 
 .thought-card-img {
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   border-radius: 3px;
   width: 100%;
   height: 180px;
@@ -316,8 +335,16 @@ main {
   align-items: center;
 }
 
+.more-links a {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #5C1333;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
  .btn-more {
-  border: 3px solid #513851;
+  border: 3px solid #5C1333;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -327,14 +354,17 @@ main {
   cursor: pointer;
 }
 
-.more-links a {
-  font-size: 11px;
-  text-transform: uppercase;
-  color: #513851;
-  font-weight: bold;
-  margin-top: 10px;
+#btn-more-in {
+  background-image: url('assets/linkedin-32.png');
 }
 
+#btn-more-gh {
+  background-image: url('assets/github-32.png');
+}
+
+#btn-more-so {
+  background-image: url('assets/stackoverflow-32.png');
+}
 
 /* STYLING FOR FOOTER */
 footer {
@@ -361,12 +391,122 @@ footer h4, footer p {
 }
 
 /* STYLING FOR MEDIA QUERY 1 BIG PHONE */
+@media (min-width: 540px) and (max-width: 666px) {
+
+.header-info {
+  width: 35%;
+  top: 170px;
+}
+
+figure {
+  width: 200px; 
+  position: absolute; 
+  margin: 0;
+  top: 330px;
+}
+
+.project-card-img {
+  height: 270px;
+}
+
+}
 
 /* STYLING FOR MEDIA QUERY 2 TABLET */
 @media (min-width: 667px) and (max-width: 1024px) {
 
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
   header {
     background-image: url('assets/wallpaper_1200.jpg');
+  }
+
+  .btn {
+    width: 80px;
+    height: 80px;
+  }
+
+  #btn-in {
+    background-image: url('assets/linkedin-24.png');
+  }
+  
+  #btn-gh {
+    background-image: url('assets/github-24.png');
+  }
+  
+  #btn-so {
+    background-image: url('assets/stackoverflow-24.png');
+  }
+
+  .header-info {
+    width: 35%;
+    top: 170px;
+  }
+
+  figure {
+    width: 250px; 
+    position: absolute; 
+    margin: 0;
+    top: 280px;
+  }
+
+  .projects-flex {
+    flex-direction: row;
+  }
+
+  .project-card {
+    width: 45%;
+  }
+
+  .project-card-img {
+    height: 250px;
+  }
+
+  .thoughts-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .thought-card {
+    width: 40%;
+  }
+
+  .skill-box-inner {
+    width: 30%;
+  }
+
+  .btn-more {
+    width: 80px;
+    height: 80px;
+  }
+  
+  #btn-more-in {
+    background-image: url('assets/linkedin-32.png');
+  }
+  
+  #btn-more-gh {
+    background-image: url('assets/github-32.png');
+  }
+  
+  #btn-more-so {
+    background-image: url('assets/stackoverflow-32.png');
   }
 
 }
@@ -379,11 +519,11 @@ footer h4, footer p {
   }
 
   h2 {
-    font-size: 42px;
+    font-size: 38px;
   }
 
   h3 {
-    font-size: 36px;
+    font-size: 33px;
   }
 
   h4 {
@@ -391,7 +531,7 @@ footer h4, footer p {
   }
 
   p {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   header {
@@ -428,9 +568,7 @@ footer h4, footer p {
   }
 
   .projects-flex {
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
   }
 
   .project-card {
@@ -438,9 +576,9 @@ footer h4, footer p {
   }
 
   .project-card-img {
-    height: 300px;
+    height: 250px;
   }
-  
+
   .thoughts-flex {
     display: flex;
     flex-direction: row;
@@ -452,6 +590,23 @@ footer h4, footer p {
 
   .skill-box-inner {
     width: 30%;
+  }
+
+  .btn-more {
+    width: 120px;
+    height: 120px;
+  }
+  
+  #btn-more-in {
+    background-image: url('assets/linkedin-48.png');
+  }
+  
+  #btn-more-gh {
+    background-image: url('assets/github-48.png');
+  }
+  
+  #btn-more-so {
+    background-image: url('assets/stackoverflow-48.png');
   }
 
 }

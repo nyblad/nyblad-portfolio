@@ -15,11 +15,10 @@
 
   <header>
     <div class="header-links">
-      <button class="btn" style="background-image: url('assets/linkedin-16.png')"
+      <button class="btn" id="btn-in"
         onclick="window.location.href = 'https://www.linkedin.com/in/sofienyblad/';"></button>
-      <button class="btn" style="background-image: url('assets/github-16.png')"
-        onclick="window.location.href = 'https://github.com/nyblad';"></button>
-      <button class="btn" style="background-image: url('assets/stackoverflow-16.png')"
+      <button class="btn" id="btn-gh" onclick="window.location.href = 'https://github.com/nyblad';"></button>
+      <button class="btn" id="btn-so"
         onclick="window.location.href = 'https://stackoverflow.com/users/12034125/sofie-nyblad';"></button>
     </div>
     <div class="header-info">
@@ -55,35 +54,35 @@
     <div class="wrapper-grey">
       <section class="featured-projects">
         <h2>FEATURED PROJECTS</h2>
+        <div class="projects-flex">
+          <a class="project-card" href="https://github.com/nyblad/nyblad-weather-app">
+            <div class="project-card-title">Weather app</div>
+            <div class="project-card-img" style="background-image: url('assets/project-weather-day.jpg')"></div>
+            <div class="project-card-text"><span class="text-h">Weather app with API.</span> Lorem ipsum dolor sit amet
+              consectetur
+              adipisicing elit<span class="text-h"> >></span></div>
+            <div class="project-card-tags">
+              <div class="tag">HTML5</div>
+              <div class="tag">CSS3</div>
+              <div class="tag">JavaScript ES6</div>
+              <div class="tag">API</div>
+            </div>
+          </a>
 
-        <a class="project-card" href="https://github.com/nyblad/nyblad-weather-app">
-          <div class="project-card-title">Weather app</div>
-          <div class="project-card-img" style="background-image: url('assets/project-weather-day.jpg')"></div>
-          <div class="project-card-text"><span class="text-h">Weather app with API.</span> Lorem ipsum dolor sit amet
-            consectetur
-            adipisicing elit<span class="text-h"> >></span></div>
-          <div class="project-card-tags">
-            <div class="tag">HTML5</div>
-            <div class="tag">CSS3</div>
-            <div class="tag">JavaScript ES6</div>
-            <div class="tag">API</div>
-          </div>
-        </a>
-
-        <a class="project-card" href="https://github.com/nyblad/nyblad-pizzabot">
-          <div class="project-card-title">Pizza bot</div>
-          <div class="project-card-img" style="background-image: url('assets/project-pizzabot.jpg')"></div>
-          <div class="project-card-text"><span class="text-h">pizza bot with Javascript.</span> Lorem ipsum dolor sit
-            amet
-            consectetur
-            adipisicing elit<span class="text-h"> >></span></div>
-          <div class="project-card-tags">
-            <div class="tag">HTML5</div>
-            <div class="tag">CSS3</div>
-            <div class="tag">JavaScript ES6</div>
-          </div>
-        </a>
-
+          <a class="project-card" href="https://github.com/nyblad/nyblad-pizzabot">
+            <div class="project-card-title">Pizza bot</div>
+            <div class="project-card-img" style="background-image: url('assets/project-pizzabot.jpg')"></div>
+            <div class="project-card-text"><span class="text-h">pizza bot with Javascript.</span> Lorem ipsum dolor sit
+              amet
+              consectetur
+              adipisicing elit<span class="text-h"> >></span></div>
+            <div class="project-card-tags">
+              <div class="tag">HTML5</div>
+              <div class="tag">CSS3</div>
+              <div class="tag">JavaScript ES6</div>
+            </div>
+          </a>
+        </div>
       </section>
 
       <div class="other-projects">
@@ -113,16 +112,26 @@
     <div class="wrapper-white">
       <section class="my-thoughts">
         <h2>MY THOUGHTS ABOUT CODE</h2>
-        <a class="thought-card"
-          href="https://www.linkedin.com/posts/sofienyblad_frontend-bootcamp-javascript-activity-6590911815268601856-mO31">
-          <div class="thought-card-img" style="background-image: url('assets/office.svg')"></div>
-          <h4>Oct 2019</h4>
-          <div class="thought-headline">First sprint of bootcamp</div>
-          <div class="thought-card-text">Our first sprint at Technigo Bootcamp is done, four projects in four weeks.
-            Focus has been to get familiar with coding tools
-            (and each other), lots of HTML5 and CSS3 and a taste of JavaScript.<span class="text-h"> >></span></div>
-        </a>
-
+        <div class="thoughts-flex">
+          <a class="thought-card"
+            href="https://www.linkedin.com/posts/sofienyblad_frontend-bootcamp-javascript-activity-6590911815268601856-mO31">
+            <div class="thought-card-img" style="background-image: url('assets/office.svg')"></div>
+            <h4>Oct 2019</h4>
+            <div class="thought-headline">First sprint of bootcamp</div>
+            <div class="thought-card-text">Our first sprint at Technigo Bootcamp is done, four projects in four weeks.
+              Focus has been to get familiar with coding tools
+              (and each other), lots of HTML5 and CSS3 and a taste of JavaScript.<span class="text-h"> >></span></div>
+          </a>
+          <a class="thought-card"
+            href="https://www.linkedin.com/posts/sofienyblad_frontend-bootcamp-javascript-activity-6590911815268601856-mO31">
+            <div class="thought-card-img" style="background-image: url('assets/office.svg')"></div>
+            <h4>Oct 2019</h4>
+            <div class="thought-headline">First sprint of bootcamp</div>
+            <div class="thought-card-text">Our first sprint at Technigo Bootcamp is done, four projects in four weeks.
+              Focus has been to get familiar with coding tools
+              (and each other), lots of HTML5 and CSS3 and a taste of JavaScript.<span class="text-h"> >></span></div>
+          </a>
+        </div>
       </section>
     </div>
 

@@ -55,7 +55,7 @@ h4 {
 
 p {
   font-size: 17px;
-
+  line-height: 1.5;
 }
 
 a {
@@ -86,17 +86,30 @@ header {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  margin-left: 5px;
   background: none;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 }
 
+#btn-in {
+  background-image: url('assets/linkedin-16.png');
+}
+
+#btn-gh {
+  background-image: url('assets/github-16.png');
+}
+
+#btn-so {
+  background-image: url('assets/stackoverflow-16.png');
+}
+
 .header-info {
   width: 75%;
   position: absolute; 
   top: 170px;
-  left: 30px;
+  left: 10%;
 }
 
 header h3 {
@@ -242,7 +255,6 @@ main {
 .thought-card-img {
   background-size: cover;
   background-position: center center;
-  /* box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.5); */
   border-radius: 3px;
   width: 100%;
   height: 180px;
@@ -270,6 +282,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   flex-grow: 1;
+  justify-content: center;
 }
 
 .skill-box-inner {
@@ -330,25 +343,115 @@ footer {
   color: #FFF;
   text-align: center;
   padding: 30px 0;
-  height: 220px;
+  height: 10%;
 }
 
 footer h3 {
   color: #FFF;
 }
+
 footer h4, footer p {
   color: #FFF;
   margin: 8px 0;
 }
 
 .credit {
-  padding: 15px 0;
   font-size: 9px;
   color: #FFF;
 }
 
-/* STYLING FOR MEDIA QUERY 1 BIG PHONE*/
+/* STYLING FOR MEDIA QUERY 1 BIG PHONE */
 
-/* STYLING FOR MEDIA QUERY 2 TABLET*/
+/* STYLING FOR MEDIA QUERY 2 TABLET */
+@media (min-width: 667px) and (max-width: 1024px) {
 
-/* STYLING FOR MEDIA QUERY 3 DESKTOP*/
+  header {
+    background-image: url('assets/wallpaper_1200.jpg');
+  }
+
+}
+
+/* STYLING FOR MEDIA QUERY 3 DESKTOP */
+@media (min-width: 1025px) {
+
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
+  h4 {
+    font-size: 23px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  header {
+    background-image: url('assets/wallpaper_1900.jpg');
+  }
+
+  .btn {
+    width: 80px;
+    height: 80px;
+  }
+
+  #btn-in {
+    background-image: url('assets/linkedin-24.png');
+  }
+  
+  #btn-gh {
+    background-image: url('assets/github-24.png');
+  }
+  
+  #btn-so {
+    background-image: url('assets/stackoverflow-24.png');
+  }
+
+  .header-info {
+    width: 35%;
+    top: 170px;
+  }
+
+  figure {
+    width: 300px; 
+    position: absolute; 
+    margin: 0;
+    top: 250px;
+  }
+
+  .projects-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .project-card {
+    width: 45%;
+  }
+
+  .project-card-img {
+    height: 300px;
+  }
+  
+  .thoughts-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .thought-card {
+    width: 40%;
+  }
+
+  .skill-box-inner {
+    width: 30%;
+  }
+
+}

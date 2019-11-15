@@ -1,5 +1,5 @@
 //Array of words
-const words = ['tech support', 'project management', 'web editor'];
+const words = ['tech support', 'project management', 'web editor', 'intern controller'];
 
 let index = 0;
 

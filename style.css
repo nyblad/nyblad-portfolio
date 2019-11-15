@@ -502,6 +502,10 @@ figure {
     height: 250px;
   }
 
+  .tag {
+    font-size: 12px;
+  }
+
   .thoughts-flex {
     display: flex;
     flex-direction: row;
@@ -604,6 +608,10 @@ figure {
 
   .project-card-img {
     height: 250px;
+  }
+
+  .tag {
+    font-size: 14px;
   }
 
   .thoughts-flex {

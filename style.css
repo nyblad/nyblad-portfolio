@@ -74,6 +74,12 @@ header {
   height: 500px;
 }
 
+.header-wrapper {
+  max-width: 1300px;
+  position: relative;
+  margin: 0 auto;
+}
+
 .header-links {
   position: absolute; /*relative to html since parent has a static position*/
   top: 70px;
@@ -166,9 +172,8 @@ main {
 
 .summary, .tech, .featured-projects, .other-projects, .my-thoughts, .skills, .more {
   padding: 50px 30px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
-  
 }
 
 .more {

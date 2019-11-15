@@ -64,6 +64,12 @@ a {
   border-radius: 5px;
 }
 
+.header-links-tab:focus, .email:focus, .credit:focus {
+  outline: 2px solid #FFF;
+  outline-offset: 3px;
+  border-radius: 5px;
+}
+
 /* STYLING FOR HEADER */
 header {
   background: #4C5B5C;

@@ -39,7 +39,7 @@ h3 {
 h4 {
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   color: #5C1333;
   margin: 10px 0;
@@ -235,7 +235,7 @@ main {
 
 .project-card-title {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   color: #FFF;
   position: relative; /*relative to its old position*/
@@ -260,7 +260,7 @@ main {
 
 .text-h {
   color: #5C1333;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -311,7 +311,7 @@ main {
 .thought-headline {
   color: #000;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -367,7 +367,7 @@ main {
   font-size: 11px;
   text-transform: uppercase;
   color: #5C1333;
-  font-weight: bold;
+  font-weight: 700;
   margin-top: 10px;
 }
 

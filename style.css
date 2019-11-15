@@ -426,22 +426,22 @@ footer h4, footer p {
 /* STYLING FOR MEDIA QUERY 1 BIG PHONE */
 @media (min-width: 540px) and (max-width: 666px) {
 
-.header-info {
-  width: 45%;
-}
+  .header-info {
+    width: 45%;
+  }
 
-figure {
-  width: 200px; 
-  position: absolute; 
-  margin: 0;
-  top: 330px;
-}
+  figure {
+    width: 200px; 
+    position: absolute; 
+    margin: 0;
+    top: 330px;
+  }
 
-.project-card-img {
-  height: 270px;
-}
+  .project-card-img {
+    height: 270px;
+  }
 
-}
+  }
 
 /* STYLING FOR MEDIA QUERY 2 TABLET */
 @media (min-width: 667px) and (max-width: 1024px) {

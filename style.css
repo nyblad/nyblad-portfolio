@@ -96,7 +96,7 @@ header {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  margin-left: 5px;
+  margin-left: 10px;
   background: none;
   background-repeat: no-repeat;
   background-position: center;
@@ -353,7 +353,7 @@ main {
   align-items: center;
 }
 
-.more-links a {
+.more-links-wrapper p {
   font-size: 11px;
   text-transform: uppercase;
   color: #5C1333;
@@ -634,6 +634,10 @@ figure {
   
   #btn-more-so {
     background-image: url('assets/stackoverflow-48.png');
+  }
+
+  .more-links-wrapper p {
+    font-size: 17px;
   }
 
 }

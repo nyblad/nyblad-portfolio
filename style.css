@@ -64,6 +64,14 @@ a {
   color: #5C1333;
 }
 
+/* ACCESSABILITY STYLING */
+
+:focus {
+  outline: 2px solid #5C1333;
+  outline-offset: 3px;
+  border-radius: 5px;
+}
+
 /* STYLING FOR HEADER */
 header {
   background: #4C5B5C;
@@ -121,7 +129,7 @@ header h3 {
 header h4 {
   text-transform: uppercase;
   color: #FFF;
-  letter-spacing: 1.15px;
+  letter-spacing: 1.2px;
   font-size: 13px;
   font-weight: 300;
   margin: 5px 0;
@@ -160,6 +168,7 @@ main {
   padding: 50px 30px;
   max-width: 1000px;
   margin: 0 auto;
+  
 }
 
 .more {
@@ -169,6 +178,7 @@ main {
 /* STYLING FOR SUMMARY */
 .summary {
   text-align: left;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .line-dot {
@@ -189,6 +199,12 @@ main {
   top: -3px;
   border-radius: 50%;
   background: #5C1333;
+}
+
+/* STYLING FOR TECH */
+
+.tech {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* STYLING FOR PROJECTS */
@@ -385,9 +401,14 @@ footer h4, footer p {
   margin: 8px 0;
 }
 
+.email {
+  color: #FFF;
+}
+
 .credit {
   font-size: 9px;
   color: #FFF;
+  margin-top: 10px;
 }
 
 /* STYLING FOR MEDIA QUERY 1 BIG PHONE */
@@ -558,6 +579,10 @@ figure {
   .header-info {
     width: 35%;
     top: 170px;
+  }
+
+  header h4 {
+    font-size: 22px;
   }
 
   figure {

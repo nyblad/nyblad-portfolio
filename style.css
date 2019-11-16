@@ -335,7 +335,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   flex-grow: 1;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
  ul {

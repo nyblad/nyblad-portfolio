@@ -184,7 +184,7 @@ main {
 }
 
 .more {
-  max-width: 700px;
+  max-width: 900px;
 }
 
 /* STYLING FOR SUMMARY */
@@ -214,7 +214,6 @@ main {
 }
 
 /* STYLING FOR TECH */
-
 .tech {
   font-family: 'Montserrat', sans-serif;
 }
@@ -224,6 +223,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .project-card {
@@ -294,6 +294,10 @@ main {
 }
 
 /* STYLING FOR THOUGHTS */
+.thoughts-flex {
+  margin-top: 10px;
+}
+
 .thought-card {
   display: flex;
   flex-direction: column;
@@ -349,6 +353,7 @@ main {
 .more-links-wrapper {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 15px;
 }
 
 .more-links {
@@ -520,15 +525,19 @@ footer h4, footer p {
     width: 45%;
   }
 
+  .skill-box-inner-left {
+    width: 30%;
+  }
+
   .skill-box-inner-right {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 50%;
+    width: 70%;
   }
 
   .skill-box {
-    width: 35%;
+    width: 50%;
   } 
 
   .btn-more {
@@ -645,7 +654,7 @@ footer h4, footer p {
   }
 
   .skill-box {
-    width: 35%;
+    width: 40%;
   } 
 
   .btn-more {

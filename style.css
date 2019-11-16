@@ -106,30 +106,14 @@ header {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  background: none;
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
   display:flex;
   justify-content: center;
   align-items: center;
-  /* padding: 3px; */
 }
 
 .btn-img {
   width: 16px;
-}
-
-#btn-in {
-  /* background-image: url('assets/linkedin-16.png'); */
-}
-
-#btn-gh {
-  background-image: url('assets/github-16.png');
-}
-
-#btn-so {
-  background-image: url('assets/stackoverflow-16.png');
 }
 
 .header-info {
@@ -392,23 +376,16 @@ main {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: none;
-  background-repeat: no-repeat;
-  background-position: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 
-#btn-more-in {
-  background-image: url('assets/linkedin-32.png');
+.btn-more-img {
+  width: 32px;
 }
 
-#btn-more-gh {
-  background-image: url('assets/github-32.png');
-}
-
-#btn-more-so {
-  background-image: url('assets/stackoverflow-32.png');
-}
 
 /* STYLING FOR FOOTER */
 footer {
@@ -484,18 +461,6 @@ footer h4, footer p {
     width: 24px;
   }
 
-  #btn-in {
-    /* background-image: url('assets/linkedin-24.png'); */
-  }
-  
-  #btn-gh {
-    background-image: url('assets/github-24.png');
-  }
-  
-  #btn-so {
-    background-image: url('assets/stackoverflow-24.png');
-  }
-
   .header-info {
     width: 45%;
   }
@@ -554,18 +519,10 @@ footer h4, footer p {
     height: 80px;
   }
   
-  #btn-more-in {
-    background-image: url('assets/linkedin-32.png');
+  .btn-more-img {
+    width: 48px;
   }
   
-  #btn-more-gh {
-    background-image: url('assets/github-32.png');
-  }
-  
-  #btn-more-so {
-    background-image: url('assets/stackoverflow-32.png');
-  }
-
 }
 
 /* STYLING FOR MEDIA QUERY 3 DESKTOP */
@@ -600,20 +557,8 @@ footer h4, footer p {
     height: 80px;
   }
 
-.btn-img {
-  width: 24px;
-}
-
-  #btn-in {
-    /* background-image: url('assets/linkedin-24.png'); */
-  }
-  
-  #btn-gh {
-    background-image: url('assets/github-24.png');
-  }
-  
-  #btn-so {
-    background-image: url('assets/stackoverflow-24.png');
+  .btn-img {
+    width: 24px;
   }
 
   .header-info {
@@ -691,17 +636,10 @@ footer h4, footer p {
     height: 120px;
   }
   
-  #btn-more-in {
-    background-image: url('assets/linkedin-48.png');
+  .btn-more-img {
+    width: 48px;
   }
   
-  #btn-more-gh {
-    background-image: url('assets/github-48.png');
-  }
-  
-  #btn-more-so {
-    background-image: url('assets/stackoverflow-48.png');
-  }
 
   .more-links-wrapper p {
     font-size: 17px;

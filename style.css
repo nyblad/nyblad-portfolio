@@ -25,7 +25,7 @@ h2 {
   color: #FFF;
   font-size: 22px;
   font-weight: 700;
-  margin: 0 0 40px 0;
+  margin: 0 0 30px 0;
 }
 
 h3 {
@@ -73,15 +73,15 @@ a {
 /* STYLING FOR HEADER */
 header {
   background: #4C5B5C;
-  background-image: url('assets/wallpaper_750.jpg');
+  background-image: url('assets/wallpaper_700.jpg');
   background-size: cover;
-  background-position: top;
+  background-position: top left;
   color: #FFF;
   height: 500px;
 }
 
 .header-wrapper {
-  max-width: 1300px;
+  max-width: 1100px;
   position: relative;
   margin: 0 auto;
 }
@@ -129,15 +129,6 @@ header {
   left: 10%;
 }
 
-header p {
-  color: #FFF;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 19px;
-  font-weight: 700;
-  text-transform: lowercase;
-  margin-top: 0;
-}
-
 header h4 {
   text-transform: uppercase;
   color: #FFF;
@@ -150,6 +141,16 @@ header h4 {
 .highlight {
   font-weight: 700;
 }
+
+header p {
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: lowercase;
+  margin-top: 0;
+}
+
 /* STYLING FOR PROFILE IMAGE */
 figure {
   width: 160px; 
@@ -177,7 +178,7 @@ main {
 }
 
 .summary, .tech, .featured-projects, .other-projects, .my-thoughts, .skills, .more {
-  padding: 50px 30px;
+  padding: 50px 10%;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -234,6 +235,7 @@ main {
 }
 
 .project-card-title {
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
@@ -329,13 +331,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   flex-grow: 1;
-  justify-content: center;
-}
-
-.skill-box-inner {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+  justify-content: space-evenly;
 }
 
  ul {
@@ -350,7 +346,6 @@ main {
  }
 
  /* STYLING FOR MORE BUTTONS */
-
 .more-links-wrapper {
   display: flex;
   justify-content: space-evenly;
@@ -491,14 +486,12 @@ footer h4, footer p {
     width: 35%;
   }
 
-  header h4 {
-    font-size: 16px;
+  header p {
+    font-size: 21px;
   }
 
   figure {
     width: 230px; 
-    position: absolute; 
-    margin: 0;
     top: 290px;
   }
 
@@ -527,9 +520,16 @@ footer h4, footer p {
     width: 45%;
   }
 
-  .skill-box-inner {
-    width: 30%;
+  .skill-box-inner-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
   }
+
+  .skill-box {
+    width: 35%;
+  } 
 
   .btn-more {
     width: 80px;
@@ -574,7 +574,7 @@ footer h4, footer p {
   }
 
   header {
-    background-image: url('assets/wallpaper_1900.jpg');
+    background-image: url('assets/wallpaper_2000.jpg');
   }
 
   .btn {
@@ -608,8 +608,6 @@ footer h4, footer p {
 
   figure {
     width: 300px; 
-    position: absolute; 
-    margin: 0;
     top: 250px;
   }
 
@@ -639,9 +637,16 @@ footer h4, footer p {
     width: 45%;
   }
 
-  .skill-box-inner {
-    width: 30%;
+  .skill-box-inner-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
   }
+
+  .skill-box {
+    width: 35%;
+  } 
 
   .btn-more {
     width: 120px;

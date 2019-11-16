@@ -14,6 +14,8 @@ h1 {
   font-size: 40px;
   text-transform: lowercase;
   margin: 5px 0;
+  font-size: 17px;
+  line-height: 1.5;
 }
 
 h2 {
@@ -45,10 +47,10 @@ h4 {
   margin: 10px 0;
 }
 
-p {
+/* p {
   font-size: 17px;
   line-height: 1.5;
-}
+} */
 
 a {
   cursor: pointer;
@@ -229,6 +231,7 @@ main {
 .project-card {
   display: flex;
   flex-direction: column;
+  position: relative; /* Needs position realtive for title to be absolute to card*/
   text-align: left;
   width: 100%;
   margin-bottom: 20px;
@@ -240,9 +243,9 @@ main {
   font-weight: 700;
   font-size: 18px;
   color: #FFF;
-  position: relative; /*relative to its old position*/
+  position: absolute; /*relative to its old position*/
   align-self: center;
-  top: 35%;
+  top: 25%;
 }
 
 .project-card-img {
@@ -257,6 +260,7 @@ main {
 .project-card-text {
   margin: 15px 0;
   color: #000;
+  font-size: 17px;
   line-height: 1.5;
 }
 
@@ -278,7 +282,7 @@ main {
   background: #E7D5DD;
   color: #111111;
   margin-right: 5px;
-  font-size: 9px;
+  font-size: 10px;
 }
 
 .other-projects {
@@ -324,6 +328,7 @@ main {
 .thought-card-text {
   margin: 15px 0;
   color: #000;
+  font-size: 17px;
   line-height: 1.5;
   margin: 5px 0 15px 0;
 }
@@ -430,24 +435,13 @@ footer h4, footer p {
     width: 45%;
   }
 
-  figure {
-    width: 200px; 
-    position: absolute; 
-    margin: 0;
-    top: 330px;
-  }
-
-  .project-card-img {
-    height: 270px;
-  }
-
   }
 
 /* STYLING FOR MEDIA QUERY 2 TABLET */
 @media (min-width: 667px) and (max-width: 1024px) {
 
   h1 {
-    font-size: 60px;
+    font-size: 58px;
   }
 
   h2 {
@@ -489,6 +483,10 @@ footer h4, footer p {
 
   .header-info {
     width: 35%;
+  }
+
+  header h4 {
+    font-size: 16px;
   }
 
   header p {
@@ -608,7 +606,7 @@ footer h4, footer p {
   }
 
   header h4 {
-    font-size: 22px;
+    font-size: 28px;
   }
 
   header p {
@@ -633,6 +631,10 @@ footer h4, footer p {
     height: 250px;
   }
 
+  .project-card-text {
+    font-size: 20px;
+  }
+
   .tag {
     font-size: 14px;
   }
@@ -646,16 +648,28 @@ footer h4, footer p {
     width: 45%;
   }
 
+  .thought-card-text {
+    font-size: 20px;
+  }
+
+  .skill-box-inner-left {
+    width: 30%;
+  }
+
   .skill-box-inner-right {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 50%;
+    width: 70%;
   }
 
   .skill-box {
-    width: 40%;
+    width: 50%;
   } 
+
+  li {
+    font-size: 22px;
+  }
 
   .btn-more {
     width: 120px;

@@ -164,7 +164,7 @@ main {
 }
 
 .wrapper-grey {
-  background: #EFEBE9;
+  background: #F4F2F0;
 }
 
 .summary, .tech, .featured-projects, .other-projects, .my-thoughts, .skills, .more {
@@ -391,7 +391,7 @@ main {
 /* STYLING FOR FOOTER */
 footer {
   margin: 0;
-  background: #324041;
+  background: #4E6365;
   color: #FFF;
   text-align: center;
   padding: 30px 0;

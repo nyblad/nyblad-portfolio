@@ -200,6 +200,7 @@ main {
   position: relative;
   float: right;
   top: -3px;
+  right: -1px;
   border-radius: 50%;
   background: #5C1333;
 }

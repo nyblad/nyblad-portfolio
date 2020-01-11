@@ -581,6 +581,7 @@ footer h4, footer p {
 
   .btn:hover .btn-img {
     width: 30px;
+    transition: width 0.4s;
   }
 
   .header-info {
@@ -664,6 +665,7 @@ footer h4, footer p {
 
   .btn-more:hover .btn-more-img {
     width: 54px;
+    transition: width 0.4s;
   }
   
 

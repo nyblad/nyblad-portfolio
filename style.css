@@ -142,24 +142,25 @@ header h3 {
 }
 
 /* STYLING FOR PROFILE IMAGE */
-@-webkit-keyframes slide {
+/* @-webkit-keyframes slide {
   100% { right: 10%; }
 }
 
 @keyframes slide {
   100% { right: 10%; }
-}
+} */
 
 figure {
   width: 160px; 
   position: absolute; 
   margin: 0;
   top: 360px;
-  right: -50%;
+  right: 10%;
+  /* right: -50%;
   animation: slide 0.7s forwards;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
   -webkit-animation: slide 0.7s forwards;
-  -webkit-animation-delay: 1s;
+  -webkit-animation-delay: 0.5s; */
 }
 
 .profile-img {
@@ -187,6 +188,25 @@ main {
 
 .more {
   max-width: 900px;
+}
+
+/* SLIDE IN EFFECT ON P SECTIONS*/
+.slide-in {
+  opacity: 0;
+  transition: all .8s;
+}
+
+.left.slide-in {
+  transform: translateX(-30%) scale(0.95);
+}
+
+.right.slide-in {
+  transform: translateX(30%) scale(0.95);
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
 }
 
 /* STYLING FOR SUMMARY */

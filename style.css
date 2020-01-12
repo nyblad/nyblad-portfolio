@@ -193,15 +193,15 @@ main {
 /* SLIDE IN EFFECT ON P SECTIONS*/
 .slide-in {
   opacity: 0;
-  transition: all .8s;
+  transition: all 1s;
 }
 
 .left.slide-in {
-  transform: translateX(-30%) scale(0.95);
+  transform: translateX(-50%) scale(0.95);
 }
 
 .right.slide-in {
-  transform: translateX(30%) scale(0.95);
+  transform: translateX(50%) scale(0.95);
 }
 
 .slide-in.active {
